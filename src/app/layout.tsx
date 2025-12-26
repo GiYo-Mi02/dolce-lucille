@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Fraunces, DM_Sans } from "next/font/google";
 import "./globals.css";
-// IMPORT THE COMPONENTS
+// FIX: Import the missing components
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
@@ -31,12 +31,12 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={`${fraunces.variable} ${dmSans.variable} bg-cream text-espresso antialiased`}>
-        {/* Navbar goes at the top */}
+        {/* FIX: Add Navbar at the top */}
         <Navbar />
         
         {children}
         
-        {/* Footer goes at the bottom */}
+        {/* FIX: Add Footer at the bottom */}
         <Footer />
       </body>
     </html>
